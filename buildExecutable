@@ -1,0 +1,7 @@
+docker stop hello
+
+docker rm hello
+
+docker build -t hello /home/srikanth/docker/
+
+docker run -d --name hello -p 80:80 -v /home/srikanth/docker/src/:var/www/html hello
